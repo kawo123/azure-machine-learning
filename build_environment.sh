@@ -89,26 +89,26 @@ fi
 az_aml_rg_name="${AZ_BASE_NAME}-aml-rg"
 
 info "Initiating login to Azure"
-# az login
+az login
 
 info "Setting Az CLI subscription context to '${AZ_SUBSCRIPTION_ID}'"
-# az account set \
-# --subscription "${AZ_SUBSCRIPTION_ID}"
+az account set \
+--subscription "${AZ_SUBSCRIPTION_ID}"
 
 info "Creating resource group '${az_aml_rg_name}' in region '${AZ_REGION}'"
-# az group create \
-# --subscription "${AZ_SUBSCRIPTION_ID}" \
-# --location "${AZ_REGION}" \
-# --name "${az_aml_rg_name}"
+az group create \
+--subscription "${AZ_SUBSCRIPTION_ID}" \
+--location "${AZ_REGION}" \
+--name "${az_aml_rg_name}"
 
 info "Validating ARM template '${ARM_TEMPLATE_PATH}' deployment to resource group '${az_aml_rg_name}'"
-# az group deployment validate \
-# --resource-group "${az_aml_rg_name}" \
-# --template-file "${ARM_TEMPLATE_PATH}" \
-# --parameters location="${AZ_REGION}" baseName="${AZ_BASE_NAME}"
+az group deployment validate \
+--resource-group "${az_aml_rg_name}" \
+--template-file "${ARM_TEMPLATE_PATH}" \
+--parameters location="${AZ_REGION}" baseName="${AZ_BASE_NAME}"
 
 info "Deploying ARM template '${ARM_TEMPLATE_PATH}' deployment to resource group '${az_aml_rg_name}'"
-# az group deployment create \
-# --resource-group "${az_aml_rg_name}" \
-# --template-file "${ARM_TEMPLATE_PATH}" \
-# --parameters location="${AZ_REGION}" baseName="${AZ_BASE_NAME}"
+az group deployment create \
+--resource-group "${az_aml_rg_name}" \
+--template-file "${ARM_TEMPLATE_PATH}" \
+--parameters location="${AZ_REGION}" baseName="${AZ_BASE_NAME}"
