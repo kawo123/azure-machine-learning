@@ -64,7 +64,7 @@
     - There are 2 mechanisms for deploying ML models: [deploy from model](https://docs.microsoft.com/en-us/python/api/azureml-core/azureml.core.model.model?view=azure-ml-py#deploy-workspace--name--models--inference-config--deployment-config-none--deployment-target-none-) and [deploy from image](https://docs.microsoft.com/en-us/python/api/azureml-core/azureml.core.webservice%28class%29?view=azure-ml-py#deploy-from-image-workspace--name--image--deployment-config-none--deployment-target-none-)
 
 - Monitoring
-
+  - Application Insight
 
 - Tracking
   - Metadata about the run (timestamp, duration, and so on)
@@ -73,8 +73,6 @@
   - Snapshot of the directory that contains your scripts, prior to the run
   - GitHub tracking and integration
     - When you start a training run where the source directory is a local Git repository, information about the repository is stored in the run history. For example, the current commit ID for the repository is logged as part of the history.
-
-
 
 ## Extras
 

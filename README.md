@@ -4,6 +4,25 @@ This repository contains notes for using Azure Machine Learning Services
 
 [Azure Machine Learning Lifecycle](./notes/machine_learning_lifecycle.md)
 
+## Pre-requisite
+
+- [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+- [Azure CLI: ML](https://docs.microsoft.com/en-us/azure/machine-learning/service/reference-azure-machine-learning-cli)
+
+## Getting Started
+
+- Deploy [ARM template](./arm/ml_environment.json)
+  - You can run `AZ_SUBSCRIPTION_ID={your-az-subscription-id} AZ_BASE_NAME='{unique-base-name}' ./build_environment.sh` to build the machine learning environment
+
+## Todos
+
+- AML: train
+- AML: deploy
+- AML: automl
+- AML: hyperdrive
+- AML: interpretability
+- AML: security
+
 ---
 
 ### PLEASE NOTE FOR THE ENTIRETY OF THIS REPOSITORY AND ALL ASSETS
