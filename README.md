@@ -22,6 +22,7 @@ This repository contains notes for using Azure Machine Learning Services
 - AML: hyperdrive
 - AML: interpretability
 - AML: security
+- Automation: provision AML notebook vm
 
 ---
 
