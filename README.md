@@ -1,8 +1,6 @@
 # Azure Machine Learning Services
 
-This repository contains notes for using Azure Machine Learning Services
-
-[Azure Machine Learning Lifecycle](./notes/machine_learning_lifecycle.md)
+This repository contains example notebooks and notes for using Azure Machine Learning Python SDK which allows you to build, train, deploy and manage machine learning solutions using Azure.
 
 ## Pre-requisite
 
@@ -14,15 +12,13 @@ This repository contains notes for using Azure Machine Learning Services
 - Deploy [ARM template](./arm/ml_environment.json)
   - You can run `AZ_SUBSCRIPTION_ID={your-az-subscription-id} AZ_BASE_NAME='{unique-base-name}' ./build_environment.sh` to build the machine learning environment
 
+- Create "Notebook VM" from [AML Studio \[preview\]](https://ml.azure.com/)
+
 ## Todos
 
-- AML: train
-- AML: deploy
-- AML: automl
-- AML: hyperdrive
-- AML: interpretability
 - AML: security
 - Automation: provision AML notebook vm
+- Table of contents
 
 ---
 
